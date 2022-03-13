@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" light-mode="dark">
+
+<head>
+  <title>Syed Portfolio | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="portfolio website Ruby Ruby On Rails Angular" />
+  <meta name="description" content="portfolio website Ruby Ruby On Rails Angular, projects, experience world." />
+
+  <meta property="og:title" content="Syed Portfolio | Home">
+  <meta property="og:type" content="website">
+  <meta name="application-name" content="Syed Portfolio | Home" />
+  <meta name="apple-mobile-web-app-title" content="Syed Portfolio | Home" />
+  <% if controller.action_name == 'landing_page' %>
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <%= stylesheet_link_tag "landing" %>
+    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6D61F5TL4"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+  <% elsif controller.action_name == 'experience' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <%= stylesheet_link_tag "experince" %>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script defer src="./assets/js/dynamicTitle.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+  <% elsif controller.action_name == 'project' || controller.action_name ==  'photo_gallery' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <%= stylesheet_link_tag "css/preloader" %>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <%= stylesheet_link_tag "css/project" %>
+    <%= stylesheet_link_tag "css/style" %>
+    <%= stylesheet_link_tag "css/cursor" %>
+    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+    <%= javascript_include_tag "js/dynamicTitle" %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+
+   <% elsif controller.action_name == 'education' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <script src="https://code.iconify.design/1/1.0.4/iconify.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <%= stylesheet_link_tag "css/hover-min" %>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <%= stylesheet_link_tag "css/preloader" %>
+    <%= stylesheet_link_tag "css/education" %>
+    <%= stylesheet_link_tag "css/style" %>
+    <%= stylesheet_link_tag "css/cursor" %>
+    <link id='favicon' rel="icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link id='favicon' rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png">
+    <%= javascript_include_tag "js/dynamicTitle" %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M11CMZ12Q"></script>
+
+   <% end %>
+
+
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M11CMZ12Q');
+  </script>
+
+</head>
+
+<body class="no-scroll-preload">
+<%= yield %>
+
+<% if controller.action_name == 'landing_page' %>
+  <%= javascript_include_tag "landing" %>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js'></script>
+  <%= javascript_include_tag "js/particle" %>
+<% elsif  controller.action_name  == 'experience' %>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6D61F5TL4"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <%= javascript_include_tag "experince" %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+      var swiper = new Swiper('.blog-slider', {
+          observer: true,
+          observeParents: true,
+          spaceBetween: 30,
+          effect: 'fade',
+          loop: true,
+          mousewheel: {
+              invert: false,
+          },
+          pagination: {
+              el: '.blog-slider__pagination',
+              clickable: true,
+          },
+
+      });
+  </script>
+  <%= javascript_include_tag "js/experience" %>
+<% elsif controller.action_name  == 'project' || controller.action_name ==  'photo_gallery' %>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <%= javascript_include_tag "js/app" %>
+  <%= javascript_include_tag "js/cursor" %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <%= javascript_include_tag "js/project" %>
+<% elsif controller.action_name  == 'education' %>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G6D61F5TL4"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <%= javascript_include_tag "js/app" %>
+  <%= javascript_include_tag "js/cursor" %>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <%= javascript_include_tag "js/education" %>
+<% end %>
+
+
+
+</body>
+
+</html>
